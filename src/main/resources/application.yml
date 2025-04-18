@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: KAFKA-LIB
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      auto-offset-reset: earliest
+      bootstrap-servers: localhost:9092
+      group-id: notification_id
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+kafka:
+  topic:
+    notification: NOTIFICATION-LOCAL
+    login: LOGIN-LOCAL
+    application: APPLICATION-LOCAL
+    activity: ACTIVITY-LOCAL
+    mobile: MOBILE-LOCAL
+    transaction-check: TRANSACTION_CHECK
+    transaction-post: TRANSACTION_POST
+    bulkWithDiffMessage: BULK_WITH_DIFF_MESSAGE-LOCAL
+    bulkWithSameMessage: BULK_WITH_SAME_MESSAGE-LOCAL
