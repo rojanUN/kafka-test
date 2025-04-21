@@ -1,4 +1,4 @@
-package swifttech.kafkalib;
+package com.swifttech.kafkalib;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,12 +1,12 @@
-package swifttech.kafkalib.payload;
+package com.swifttech.kafkalib.payload;
 
-import com.swifttech.user.enums.ChannelEnum;
-import com.swifttech.user.enums.LanguageEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import com.swifttech.kafkalib.enums.ChannelEnum;
+import com.swifttech.kafkalib.enums.LanguageEnum;
 
 import java.util.List;
 import java.util.Map;

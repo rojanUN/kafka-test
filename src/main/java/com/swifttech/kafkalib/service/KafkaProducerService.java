@@ -1,4 +1,4 @@
-package swifttech.kafkalib.service;
+package com.swifttech.kafkalib.service;
 
 public interface KafkaProducerService {
     void send(String topic, Object value);

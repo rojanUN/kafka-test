@@ -1,4 +1,4 @@
-package swifttech.kafkalib.payload;
+package com.swifttech.kafkalib.payload;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

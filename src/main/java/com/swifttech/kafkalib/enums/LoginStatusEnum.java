@@ -1,4 +1,4 @@
-package swifttech.kafkalib.enums;
+package com.swifttech.kafkalib.enums;
 
 /*
  * @Created At 07/04/2024

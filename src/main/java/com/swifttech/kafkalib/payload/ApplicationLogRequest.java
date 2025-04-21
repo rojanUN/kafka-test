@@ -1,11 +1,11 @@
-package swifttech.kafkalib.payload;
+package com.swifttech.kafkalib.payload;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import swifttech.kafkalib.enums.ApplicationStatusEnum;
+import com.swifttech.kafkalib.enums.ApplicationStatusEnum;
 
 import java.util.Date;
 

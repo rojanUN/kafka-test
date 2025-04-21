@@ -22,8 +22,19 @@ dependencies {
     implementation 'org.springframework.kafka:spring-kafka'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.kafka:spring-kafka-test'
+    annotationProcessor 'org.projectlombok:lombok'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     compileOnly 'org.projectlombok:lombok:1.18.38'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Implementation-Title': 'Kafka Library',
+                'Implementation-Version': version,
+                'Main-Class': '' // Leave empty unless a main class is needed
+        )
+    }
 }
 
 tasks.named('test') {

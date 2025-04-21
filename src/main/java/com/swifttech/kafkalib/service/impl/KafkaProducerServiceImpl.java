@@ -1,9 +1,9 @@
-package swifttech.kafkalib.service.impl;
+package com.swifttech.kafkalib.service.impl;
 
+import com.swifttech.kafkalib.service.KafkaProducerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
-import swifttech.kafkalib.service.KafkaProducerService;
 
 @RequiredArgsConstructor
 @Service

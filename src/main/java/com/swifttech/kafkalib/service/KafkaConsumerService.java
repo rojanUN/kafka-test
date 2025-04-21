@@ -1,4 +1,4 @@
-package swifttech.kafkalib.service;
+package com.swifttech.kafkalib.service;
 
 import org.springframework.kafka.listener.MessageListener;
 

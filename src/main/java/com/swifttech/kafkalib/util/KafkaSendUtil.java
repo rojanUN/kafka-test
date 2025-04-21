@@ -1,17 +1,17 @@
-package swifttech.kafkalib.util;
+package com.swifttech.kafkalib.util;
 
+import com.swifttech.kafkalib.payload.ActivityLogRequest;
+import com.swifttech.kafkalib.payload.ApplicationLogRequest;
+import com.swifttech.kafkalib.payload.CommunicationRequest;
+import com.swifttech.kafkalib.payload.LoginLogRequest;
+import com.swifttech.kafkalib.service.KafkaProducerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import swifttech.kafkalib.payload.ActivityLogRequest;
-import swifttech.kafkalib.payload.ApplicationLogRequest;
-import swifttech.kafkalib.payload.CommunicationRequest;
-import swifttech.kafkalib.payload.LoginLogRequest;
-import swifttech.kafkalib.service.KafkaProducerService;
 
 @RequiredArgsConstructor
 @Service
-public class SendUtil {
+public class KafkaSendUtil {
     private final KafkaProducerService kafkaProducerService;
 
     @Value("${kafka.topic.application}")
